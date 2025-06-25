@@ -18,9 +18,13 @@
     ]
   },
   "exclude": [
-    ".coverage/**",
-    "assets/**"
+    ".coverage/**"
   ],
+  "fmt": {
+    "exclude": [
+      "assets/**"
+    ]
+  },
   "tasks": {
     "gen": "deno run -A ./scripts/fetch_data.ts",
     "test": "deno test -A --parallel --doc",
